@@ -1,0 +1,14 @@
+.filled-forms {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.card-subbody{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dataName {
+  font-weight:bold;
+}

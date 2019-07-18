@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="filled-forms col-4 col-sm-4 col-md-4 col-lg-4" *ngFor="let form of filledForms; let i=index">
+      <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="card-subbody">
+                <h5 class="card-title">Form #{{i+1}}</h5>
+                <button (click)="toDetails(i+1, form)" class="btn btn-primary">Details</button>
+            </div>
+            <p class="card-text"> <span class="dataName">Name: </span> {{form.name}}</p>
+            <p class="card-text"> <span class="dataName">Date: </span> {{form.date}}</p>
+            <p class="card-text"> <span class="dataName">Email: </span> {{form.email}}</p>
+            <p class="card-text"> <span class="dataName">Gender: </span> {{form.gender}}</p>
+            <p class="card-text"> <span class="dataName">Budget: </span> {{form.budget}}</p>
+          </div>
+        </div>
+    </div>
+</div>
